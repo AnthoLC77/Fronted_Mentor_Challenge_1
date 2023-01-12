@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRIMAIRE */ 
+    --Dark-Violet: hsl(256, 26%, 20%)
+    --Grayish Blue: hsl(216, 30%, 68%)
+
+    /* SECONDAIRE */ 
+
+    --Very Dark Violet: hsl(270, 9%, 17%)
+    --Dark Grayish Violet: hsl(273, 4%, 51%)
+    --Very Light Gray: hsl(0, 0%, 98%)
+}
+
+body {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Serif', serif;
+    
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 250px;
+    min-height: 80px;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Karla', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Serif', serif;
+    z-index: 2;
+    background-color: white;  
+}
+
+header .logo {
+    height: 20px;
+   
+}
+
+nav ul {
+    display: flex;
+}
+
+header li {
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    text-decoration: none;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+header .gris {
+    color: hsl(273, 4%, 51%);
+}
+
+header span {
+    border: solid 2px black
+}
+
+span li a {
+    color: black;
+}
+
+header span:hover {
+    background-color: hsl(256, 26%, 20%);
+}
+
+span li a:hover {
+    color: white;
+}
+
+.vague_droite {
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    top: 10px;
+}
+
+
+/* SECTION UN */ 
+
+#sec_un {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    max-height: 550px;
+    padding: 0 250px;
+    position: relative;
+    z-index: -2;
+
+    
+}
+
+#sec_un .vague_gauche{
+    position:absolute;
+    right: 1710px;
+    top: 460px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+#sec_un .trait_dessus {
+    border-top: 1px solid white;
+    width: 130px;
+    margin-bottom: 50px;
+}
+
+#sec_un .bloc_Left {
+    margin-right: 40px;
+}
+
+#sec_un .bloc_Left p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    color: rgb(214, 214, 214);
+}
+
+#sec_un .bloc_Left button {
+    padding: 12px 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    border: white solid 1px;
+
+}
+
+
+#sec_un img {
+    position: relative;
+    top: 150px;
+    right: 180px;
+}
+
+/* SECTION TWO */
+
+#sec_deux {
+    margin-top: 400px;
+    padding: 0 250px;
+    position: relative;
+    z-index: 5;
+}
+
+#sec_deux .trait_dessus_noir {
+    border-top: 1px solid hsl(273, 4%, 51%);
+    width: 120px;
+}
+
+#sec_deux h2 {
+    font-size: 47px;
+    margin: 50px 0 70px 0;
+}
+
+#sec_deux h3 {
+    margin: 20px 0;
+}
+
+#sec_deux .proposition {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#sec_deux .proposition div {
+    margin-right: 0px;
+}
+
+#sec_deux .proposition p {
+    color: hsl(273, 4%, 51%);
+}
+
+#sec_deux article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    background-color: hsl(256, 26%, 20%);
+    margin-top: 100px;
+}
+
+#sec_deux article h2 {
+    font-size: 47px;
+    color: white;
+    line-height: 50px;
+}
+
+#sec_deux article button {
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: white;
+    border: solid 1px white;
+    background-color: transparent;
+    
+}
+
+#sec_deux article img {
+    position: absolute;
+    right: 251px;
+    z-index: 1;
+
+}
+
+/* FOOTER */ 
+
+footer {
+   background-color: hsl(0, 0%, 98%);
+   margin-top: 30px;
+   padding: 50px 250px;
+   margin-top: 130px;
+   
+}
+
+footer img {
+    height: 20px;
+}
+
+footer .trait_footer {
+    border-top: 1px solid hsl(273, 4%, 51%);
+    margin: 25px 0px;
+}
+
+.up-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos_media img {
+    margin: 0px 0px 0px 10px;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+
+
+.li-grey {
+    color: gray ;
+    margin-bottom: 30px;
+}
+
+footer li {
+    text-transform: uppercase;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
